@@ -1,0 +1,25 @@
+{
+  "name": "task-list",
+  "version": "1.0.0",
+  "description": "my first todo list with express",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vashnavichauhan1825/task-list.git"
+  },
+  "author": "vashnavi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vashnavichauhan1825/task-list/issues"
+  },
+  "homepage": "https://github.com/vashnavichauhan1825/task-list#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.1.2"
+  }
+}

@@ -1,0 +1,133 @@
+/* for whole container */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* root tag for all element */
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  /* main body part */
+  body {
+    margin: 0px;
+    text-align: center;
+    background-color:#ffe4e6;
+  }
+/* add button */
+  #add{
+    background-color: black;
+  }
+  
+  /* h1 style */
+  h1 {
+    font-size: 3rem;
+  }
+  
+  
+  /* input field for task */
+  input[type="text"] {
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+  
+/* form layout */
+  form{
+    border-top:2px solid black;
+    border-bottom:6px double black;
+  }
+  /* styling all label  */
+  label {
+    display: block;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+  
+  /* styling all container */
+  .container {
+    background-color: #4158D0;
+   background-image: linear-gradient(180deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    border-bottom-left-radius:3rem;
+    border-bottom-right-radius:3rem;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 8px 8px #888888;
+  }
+  
+  .container h1 {
+    text-align: center;
+  }
+  
+  a{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width:0px;
+    height: 0px;
+  }
+
+  ol{
+    text-align: center;
+  }
+  
+  /* for all li elements */
+  li {
+    cursor: pointer;
+    font-size:12px;
+    position: relative;
+    color:black;
+    font-weight:bold;
+    list-style-type: none;
+    display: inline-block;
+    width:80%;
+    word-wrap:break-word;
+    margin-bottom:1rem;
+    padding:1rem;
+    border-bottom-left-radius:3rem;
+    border-top-right-radius:3rem;
+    background-color: #2f4353;
+background-image: linear-gradient(93deg, #2f4353 0%, #d2ccc4 74%);
+  }
+
+  li:hover{
+    cursor: pointer;
+    color:crimson;
+  }
+
+  span{
+    position:absolute;
+    background-color:grey;
+    padding:0.2rem;
+    top:10px;
+    left:25px;
+    border-radius:0.5rem;
+    border:1px dotted yellow;
+  }
+ 
+  
+/* When clicked on, add a background color and strike out text */
+ol li.checked {
+  text-decoration: line-through;
+  background-color: #00b712;
+ background-image: linear-gradient(117deg, #00b712 0%, #5aff15 74%);
+}
+
+/* Add a "checked" mark when clicked on */
+ol li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left:8px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+  
